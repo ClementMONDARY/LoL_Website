@@ -1,0 +1,381 @@
+@import url("https://fonts.cdnfonts.com/css/montserrat-subrayada");
+@import url("https://fonts.cdnfonts.com/css/inter");
+@import url("https://fonts.cdnfonts.com/css/alegreya");
+
+/* HEADER */
+
+body {
+  margin: 0;
+}
+
+header {
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  background-color: #2d2d2d;
+  display: flex;
+  width: 100%;
+  height: 70px;
+}
+
+header a {
+  width: 8%;
+  height: 70px;
+  margin-left: 0.5rem;
+  align-items: center;
+}
+
+header a img {
+  width: 70%;
+}
+
+header h2 {
+  width: 15%;
+  height: 70px;
+  text-align: center;
+  color: #d6d6d6;
+  font-family: "Montserrat Subrayada", sans-serif;
+  font-size: 1rem;
+}
+
+/* HEADER FORM */
+
+header form {
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+
+header form input {
+  border-radius: 50px;
+  width: 80%;
+  height: 35px;
+  margin-left: 2.5rem;
+  box-shadow: 0 2px 5px black;
+  border: none;
+  background-color: #4b4b4b;
+  padding-left: 1rem;
+  color: white;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+}
+
+header form i {
+  position: absolute;
+  right: 1.8rem;
+}
+
+header form button {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  width: 13%;
+  height: 35px;
+  border: none;
+  border-radius: 50px;
+  background-color: #ff2929;
+  color: white;
+  font-size: 0.9vw;
+  box-shadow: 0 2px 5px black;
+  cursor: pointer;
+}
+
+/* BODY */
+
+.champinfo {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.blurchamp {
+  width: 120%;
+  filter: blur(1rem);
+}
+
+.champsprite {
+  width: 80%;
+  position: absolute;
+  top: 14rem;
+  left: 10vw;
+}
+
+body .figc {
+  width: 100%;
+  position: absolute;
+  top: 48vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Alegreya", sans-serif;
+  font-style: italic;
+  line-height: 10vh;
+}
+
+body .figc h2 {
+  font-size: 2.6vw;
+  font-weight: normal;
+  margin: 0;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+body .figc h1 {
+  font-size: 8vw;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+/* SECTION LEGEND */
+
+#legend {
+  background-color: #151515;
+  padding: 8rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#legend .legendChamp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 80%;
+  border: 1px solid #acacac;
+  padding: 2rem;
+  font-family: "Alegreya", sans-serif;
+  color: white;
+}
+
+/* SPELLS */
+
+#legend .legendChamp .spells {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  border-right: 1px solid #acacac;
+}
+
+#legend .legendChamp .spells h1 {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  margin: 0;
+}
+
+#legend .legendChamp .spells div {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0;
+}
+
+#legend .legendChamp .spells div img {
+  width: 12%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border: 1.5px solid transparent; /* Ajoutez une bordure transparente par défaut */
+}
+
+#legend .legendChamp .spells div img.active {
+  border-color: white; /* Changez la couleur de la bordure pour le contour blanc */
+}
+
+#legend .legendChamp .spells div img:hover {
+  transform: scale(1.13);
+}
+
+#legend .legendChamp .spells h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  margin: 1rem 0 0 0;
+  text-transform: uppercase;
+}
+
+#legend .legendChamp .spells p {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  padding-right: 1rem;
+}
+
+/* DESCPRIPTION */
+
+#legend .legendChamp .description {
+  flex: 1;
+  width: 50%;
+  height: 100%;
+}
+
+#legend .legendChamp .description p {
+  padding-left: 1rem;
+  font-size: 1.5rem;
+}
+
+/* SKINS */
+
+#skin {
+  width: 100%;
+  color: white;
+  font-family: "Alegreya", sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  padding-top: 8rem;
+}
+
+#skin .skinDiv {
+  position: relative;
+  width: 70%;
+  height: 46.6vw;
+}
+
+#skin .backgroundImage {
+  position: absolute;
+  width: 100%;
+  object-fit: fill;
+  z-index: -1;
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
+
+#skin .skinChoices {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  width: 34.5%;
+  height: 39.2vw;
+  background-color: rgb(0, 0, 0, 0.5);
+  padding: 1rem;
+}
+
+#skin .skinChoices h1 {
+  padding-bottom: 1rem;
+  border-bottom: solid 1px #afafaf;
+  width: 100%;
+  text-align: center;
+  font-size: 5rem;
+  height: 11%;
+  margin: 0;
+  line-height: 4rem;
+  margin-bottom: 3rem;
+}
+
+#skin .skinChoices .skinScroll {
+  width: 91.5%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  overflow: auto;
+}
+
+#skin .skinChoices .skinScroll::-webkit-scrollbar {
+  display: none;
+}
+
+#skin .skinChoices .skinScroll div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+
+#skin .skinChoices .skinScroll div.active {
+  border-top: #afafaf 1px solid;
+  border-bottom: #afafaf 1px solid;
+}
+
+#skin .skinChoices div img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+#skin .skinChoices div h2 {
+  font-size: 1.3rem;
+  padding-left: 1rem;
+  width: auto;
+}
+
+/* SELECTION */
+
+.chose {
+  padding-top: 3rem;
+  width: 100%;
+  text-align: center;
+  font-family: "Alegreya SC", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 10vh;
+}
+
+.chose strong {
+  font-weight: 600;
+  font-size: 10rem;
+}
+
+#selection {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#selection a {
+  text-decoration: none;
+  width: 32%;
+  margin-bottom: 1.7vw;
+  margin: 0 0.9rem 2rem 0.5rem;
+}
+
+#selection div {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+#selection div:hover {
+  transform: scale(1.05);
+}
+
+#selection div img {
+  display: block;
+  width: 100%;
+  border-radius: 25px 0 0 0;
+}
+
+#selection div h3 {
+  font-family: "Alegreya SC", sans-serif;
+  text-transform: uppercase;
+  padding: 0.4rem;
+  padding-left: 0.8rem;
+  color: white;
+  background-color: #2d2d2d;
+  font-size: 2.3vw;
+  margin: 0 auto;
+  border-radius: 0 0 25px 0;
+}
+
+.notfound {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  font-family: "Alegreya SC", sans-serif;
+  font-size: 5rem;
+  font-weight: normal;
+}
